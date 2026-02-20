@@ -1,10 +1,11 @@
 'use client'
+import React from "react";
 
-import { IonIcon } from 'ionicons/components/ion-icon.js'
-import { Facebook, Instagram } from 'lucide-react'
+import { Facebook, Instagram, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
-import { Bag, LogoWhatsapp } from 'react-ionicons'
+import { FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { FaBagShopping } from "react-icons/fa6";
 
 const signs = [
   { icon: '😢', text: "Instagram" },
@@ -43,42 +44,37 @@ export default function Signs() {
     <section className="bg-rose-bg px-[7%] py-20 text-center">
       <div
         ref={cardsRef}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between lg:px-[20%] gap-4 mb-12"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between lg:px-[20%] gap-12 mb-12"
       >
         <div className="sign-card reveal flex items-center justify-between gap-4">
-          <button
+          <a href="https://www.instagram.com/daily_mysteries?igsh=YW5uMWJ2aXo0dW1k&utm_source=qr" target="_blank" rel="noopener noreferrer"
             className="sign-card reveal flex items-center gap-3 bg-white rounded-2xl px-3 py-3
               shadow-[0_2px_18px_rgba(0,0,0,0.05)] transition-transform duration-300
               hover:-translate-y-1.5"
           >
             <Instagram className="w-20 h-16 text-rose" />
-          </button>
+          </a>
 
-          <button
+          <a href="https://www.facebook.com/dailymysteries" target="_blank" rel="noopener noreferrer"
             className="sign-card reveal flex items-center gap-3 bg-white rounded-2xl px-3 py-3
               shadow-[0_2px_18px_rgba(0,0,0,0.05)] transition-transform duration-300
               hover:-translate-y-1.5"
           > 
-          <Facebook className="w-20 h-16 text-rose" />
-          </button>
-          <button
+          <FaTiktok className="w-20 h-16 text-rose" />
+          </a>
+          <a href="https://chat.whatsapp.com/JK4Lwa8R7iAHcYB8pqhvT9?mode=ac_t" target="_blank" rel="noopener noreferrer"
             className="sign-card reveal flex items-center gap-3 bg-white rounded-2xl px-3 py-3
               shadow-[0_2px_18px_rgba(0,0,0,0.05)] transition-transform duration-300
               hover:-translate-y-1.5"
           > 
-          <LogoWhatsapp
-            color={'#e8a0a0'}  
-            title={""}
-            height="64px"
-            width="64px"
-          />
-          </button>
+          <FaWhatsapp className="w-20 h-16 text-rose" />
+          </a>
         </div>
-        <div className="">
-          <Bag color={"black"}
-            height="320px"
-            width="320px" />
-          <p className='font-extrabold text-lg italic text-[rgb(0,0,0,.6)]'>Chaque jour mérite sa dose de mystère</p>
+        <div className="flex flex-col items-center justify-center">
+          <FaBagShopping
+            className="w-[280px] h-[280px] text-black mb-4"
+          />
+          <p className='font-extrabold text-lg italic text-[rgb(0,0,0,.5)]'>Chaque jour mérite sa dose de mystère</p>
         </div>
       </div>
 

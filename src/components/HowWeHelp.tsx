@@ -1,5 +1,5 @@
 'use client'
-
+import React from "react";
 import Link from 'next/link'
 import { useReveal } from '@/hooks/useReveal'
 
@@ -41,7 +41,8 @@ export default function HowWeHelp() {
         </p>
 
         <Link
-          href="#location"
+          href="https://wa.me//688160351"
+          target="_blank"
           className="inline-block bg-rose text-white px-8 py-3.5 rounded-full
             font-nunito font-bold text-[0.82rem] uppercase tracking-widest
             transition-all duration-300 hover:bg-[#d48080] hover:-translate-y-0.5

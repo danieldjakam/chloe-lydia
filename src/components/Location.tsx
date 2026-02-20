@@ -1,5 +1,5 @@
 'use client'
-
+import React from "react";
 import { useReveal } from '@/hooks/useReveal'
 import { useState } from 'react';
 

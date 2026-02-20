@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Signs from '@/components/Signs'
@@ -10,8 +11,8 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Hero />
       <Signs />
+      <Hero />
       <HowWeHelp />
       {/* <Services /> */}
       <Location />

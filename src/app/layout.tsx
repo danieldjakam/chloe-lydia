@@ -1,11 +1,12 @@
+import React from "react";
 import type { Metadata } from 'next'
 import '../styles/globals.css'
 import { Poppins } from 'next/font/google'
 
 export const metadata: Metadata = {
-  title: 'Fernanda Santos – Santé Mentale pour Femmes',
+  title: 'Daily Mysteries - Ventes en ligne de produits de beauté naturels et vetements pour femmes et hommes',
   description:
-    'Cabinet de psychologie clinique spécialisé en santé mentale féminine et dépression post-partum. Consultations en ligne ou en présentiel.',
+    'Découvrez Daily Mysteries, votre boutique en ligne de produits de beauté naturels et de vêtements pour femmes et hommes. Explorez notre collection unique alliant style et bien-être, avec des produits soigneusement sélectionnés pour sublimer votre beauté naturelle. Profitez d’une expérience d’achat exceptionnelle et laissez-vous séduire par nos offres exclusives.',
 }
 const poppins = Poppins({
   subsets: ['latin'],
