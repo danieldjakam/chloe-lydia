@@ -6,8 +6,9 @@ import { useState } from 'react';
 export default function Location() {
   const mapRef = useReveal()
   const textRef = useReveal()
-    const [name, setName] = useState("");
-    const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState<{ name?: string; message?: string }>({})
 
   return (
     <section
@@ -37,13 +38,30 @@ export default function Location() {
           <div className="block gap-4 mb-4">
             <label htmlFor="name" className='block text-left mb-2 text-rose'>Nom et prenoms: </label>
             <input type="text" value={name} onChange={(e) => {setName(e.target.value)}} className='w-full rounded-md py-2 px-4 text-rose border-2 border-rose outline-none'/>
+            {errors.name && <span className="text-red-500">{errors.name}</span>}
           </div>
           <div className="block gap-4">
             <label htmlFor="name" className='block text-left mb-2 text-rose'>Message: </label>
             <textarea value={message} onChange={(e) => {setMessage(e.target.value)}} className='w-full rounded-md py-2 px-4 text-rose border-2 border-rose outline-none resize-none' rows={5}></textarea>
+            {errors.message && <span className="text-red-500">{errors.message}</span>}
           </div>
       <button
-        onClick={() => {}}
+        onClick={() => {
+          const newErrors: { name?: string; message?: string } = {}
+          if (!name.trim()) newErrors.name = 'Le nom est requis.'
+          if (!message.trim()) newErrors.message = 'Le message est requis.'
+          setErrors(newErrors)
+          if (Object.keys(newErrors).length === 0) {
+            const a = document.createElement('a')
+            a.href = `https://wa.me//688160351?text=${encodeURIComponent(`Bonjour Daily Mysteries,\nNom: ${name}\nMessage: ${message}`)}`
+            a.target = '_blank'
+            a.click()
+            setName('')
+            setMessage('')
+            setErrors({})
+            alert('Votre message a été préparé dans WhatsApp. Veuillez l’envoyer pour nous contacter !')
+          }
+        }}
         className="inline-block border-2 border-rose text-rose px-8 py-3 rounded-full
           font-nunito font-bold text-[0.82rem] uppercase tracking-[0.07em]
           transition-all duration-300 hover:bg-rose hover:text-white mt-8"
