@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { FaBagShopping } from "react-icons/fa6";
+import Image from "next/image";
 
 const signs = [
   { icon: '😢', text: "Instagram" },
@@ -39,6 +40,7 @@ export default function Signs() {
 
     return () => observer.disconnect()
   }, [])
+  const img = require('../assets/images/bag.png')
 
   return (
     <section className="bg-rose-bg px-[7%] py-20 text-center">
@@ -55,7 +57,7 @@ export default function Signs() {
             <Instagram className="w-20 h-16 text-rose" />
           </a>
 
-          <a href="https://www.facebook.com/dailymysteries" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.tiktok.com/@daily_mysteries1?_r=1&_t=ZS-942e823CTrj" target="_blank" rel="noopener noreferrer"
             className="sign-card reveal flex items-center gap-3 bg-white rounded-2xl px-3 py-3
               shadow-[0_2px_18px_rgba(0,0,0,0.05)] transition-transform duration-300
               hover:-translate-y-1.5"
@@ -71,9 +73,15 @@ export default function Signs() {
           </a>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <FaBagShopping
-            className="w-[280px] h-[280px] text-black mb-4"
-          />
+          
+                  
+                  <Image
+                    src={img}
+                    alt="Photo de Chloe Lydia"
+                    width={400}
+                    height={500}
+                    className="relative z-10 w-full max-w-[420px] rounded-[20px] object-cover"
+                  />
           <p className='font-extrabold text-lg italic text-[rgb(0,0,0,.5)]'>Chaque jour mérite sa dose de mystère</p>
         </div>
       </div>

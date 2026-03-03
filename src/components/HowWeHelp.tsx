@@ -2,10 +2,12 @@
 import React from "react";
 import Link from 'next/link'
 import { useReveal } from '@/hooks/useReveal'
+import Image from "next/image";
 
 export default function HowWeHelp() {
   const imgRef = useReveal()
   const textRef = useReveal()
+  const img = require('../assets/images/profile.jpeg')
 
   return (
     <section className="bg-cream px-[7%] py-[90px] grid grid-cols-1 md:grid-cols-2 gap-[70px] items-center">
@@ -20,6 +22,13 @@ export default function HowWeHelp() {
         }}
       >
         
+        <Image
+          src={img}
+          alt="Photo de Chloe Lydia"
+          width={400}
+          height={500}
+          className="relative z-10 w-full max-w-[420px] rounded-[20px] object-cover"
+        />
       </div>
 
       {/* Text */}
@@ -32,12 +41,12 @@ export default function HowWeHelp() {
         </h2>
 
         <p className="font-nunito text-[0.91rem] leading-[1.9] text-muted mb-4">
-          Moi, c’est <span className='text-rose font-extrabold text-md'>CHLOÉ LYDIA.</span>
-          J’ai 19 ans, je suis camerounaise, parfaitement bilingue, et passionnée par l’entrepreneuriat depuis toujours.
-          J’ai commencé à vendre très jeune, vers 17 ans, avec déjà cette même idée en tête : proposer des solutions réelles, des choses qui font du bien, qui élèvent, qui parlent. Daily Mistery a vraiment pris forme quand j’avais 18 ans, mais l’envie, elle, était là depuis longtemps.
-
-          J’aime créer, jouer, rêver grand — et surtout transformer ces rêves en réalité.
-          Daily Mistery, c’est un peu mon univers… que je partage avec vous 🤍
+          Moi, c’est <span className='text-rose font-extrabold text-md'>CHLOÉ LYDIA.</span> <br />
+          J’ai 19 ans, je suis camerounaise, bilingue et passionnée par l’entrepreneuriat depuis toujours.
+          J’ai commencé à vendre très jeune, vers 17 ans, avec une idée claire : proposer des solutions réelles, belles et utiles. Daily Mistery a pris forme à mes 18 ans, mais l’envie de créer, elle, était déjà là.
+          J’aime le soin de soi, l’esthétique, le partage de tips qui fonctionnent, et surtout aider les autres à se sentir mieux, plus confiants, plus alignés.
+          Je suis quelqu’un qui aime tenter, dépasser les limites et transformer ce qu’on disait impossible en réalité.
+          Daily Mistery, c’est mon univers — que je partage avec vous.
         </p>
 
         <Link

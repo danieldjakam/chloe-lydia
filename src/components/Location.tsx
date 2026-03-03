@@ -102,6 +102,7 @@ export default function Location() {
           nous sommes là pour vous servir !
         </div>
       </div>
+          <p className='font-extrabold text-lg italic text-[rgb(0,0,0,.5)]'>Chaque jour mérite sa dose de mystère</p>
     </section>
   )
 }

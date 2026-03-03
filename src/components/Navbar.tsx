@@ -27,12 +27,12 @@ export default function Navbar() {
 
   return (
     <nav
-      className="sticky top-0 z-50 flex items-center justify-between px-[7%] py-4
+      className="sticky top-0 z-50 flex items-center justify-center px-[7%] py-4
         bg-black backdrop-blur-md border-b border-rose/20"
     >
       <span
-        className="font-cormorant  text-rose text-[1.1rem] font-bold tracking-wide"
-        style={{ fontFamily: "'Poppins', 'sans-serif'" }}
+        className="font-cormorant  text-rose text-[2rem] font-bold tracking-wide"
+        style={{ fontFamily: "'Poppins', 'sans-serif'", fontWeight: "bold", textAlign: 'center' }}
       >
         Daily Mysteries
       </span>

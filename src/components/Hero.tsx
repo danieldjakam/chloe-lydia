@@ -1,8 +1,10 @@
 import React from "react";
 import { Heart } from 'lucide-react'
 import Link from 'next/link'
+import Image from "next/image";
 
 export default function Hero() {
+  const img = require('../assets/images/profile.jpeg')
   return (
     <section
       id="hero"
@@ -29,28 +31,20 @@ export default function Hero() {
 
         <p className="font-nunito text-[0.92rem] leading-[1.85] text-muted max-w-[800px] mb-9 font-normal">
           Pendant longtemps, j’ai appris à m’habiller en regardant ailleurs.
-          J’aimais les outfits, les accessoires, l’esthétique, les détails qui racontent une histoire. Mais à chaque fois que je voulais vraiment essayer, on me ramenait à la réalité.
-          Je me sentais incomprise. Et surtout limitée.
-          Comme si aimer le beau, le soin de soi, l’esthétique, devait forcément rester un rêve.
-          {/* Beaucoup de filles, et même des garçons, ressentaient la même chose : l’envie de bien s’habiller, 
-          de se sentir beaux, différents, alignés… sans avoir de vraie solution ici. */}
-          Daily Mistery est né de cette envie-là.
-          Créer un univers, pas juste une boutique.
-          Daily Mistery, c’est la preuve qu’on n’est pas obligé de se contenter.
-          C’est rendre l’esthétique accessible, ici aussi.
+          Pinterest, Instagram, la télévision… J’aimais l’esthétique, les détails, les univers. Mais chaque fois que je voulais vraiment essayer, on me rappelait les limites :
+          « Tu es trop. »
+          « Ici, ça n’existe pas. »
+          « On est en Afrique. »
+          Je me sentais incomprise. Limitée.
+          Et pourtant, ce désir de beau, de soin de soi, d’expression ne me quittait pas.
+          En cherchant, j’ai réalisé que je n’étais pas seule. Beaucoup de filles — et même des garçons — voulaient s’habiller autrement, créer leur univers, se sentir beaux et confiants, sans avoir de vraie solution ici.
+          Daily Mistery est né de là.
+          Pas comme une simple boutique, mais comme un univers.
+          Un espace où l’esthétique devient accessible, où chacun peut créer sa personnalité, son style, sa version du luxe — un luxe abordable, intentionnel, pensé pour ici.
+          Daily Mistery, c’est refuser de se contenter.
+          C’est rendre le beau possible.
+
         </p>
-
-        <Link
-          href="https://wa.me//688160351"
-          target="_blank"
-          className="inline-block bg-rose text-white px-8 py-3.5 rounded-full
-            font-nunito font-bold text-[0.82rem] uppercase tracking-widest
-            transition-all duration-300 hover:bg-[#d48080] hover:-translate-y-0.5
-            shadow-[0_4px_20px_rgba(232,160,160,0.4)]"
-        >
-          Nous Contacter
-        </Link>
-
         <div className="mt-6 flex flex-col gap-2">
           {[
             'Livraison à domicile',
@@ -77,7 +71,6 @@ export default function Hero() {
             borderRadius: '40% 60% 55% 45% / 40% 45% 55% 60%',
           }}
         />
-
         {/* Photo placeholder */}
         <div
           className="relative z-10 w-full max-w-[420px] rounded-[20px] flex items-center
@@ -87,6 +80,13 @@ export default function Hero() {
             background: 'linear-gradient(145deg, #f0d0d0 0%, #e0b8b8 100%)',
           }}
         >
+        <Image
+          src={img}
+          alt="Photo de Chloe Lydia"
+          width={400}
+          height={500}
+          className="relative z-10 w-full max-w-[420px] rounded-[20px] object-cover"
+        />
           <svg
             viewBox="0 0 100 120"
             fill="none"
