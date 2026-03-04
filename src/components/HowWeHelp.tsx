@@ -43,10 +43,10 @@ export default function HowWeHelp() {
         <p className="font-nunito text-[0.91rem] leading-[1.9] text-muted mb-4">
           Moi, c’est <span className='text-rose font-extrabold text-md'>CHLOÉ LYDIA.</span> <br />
           J’ai 19 ans, je suis camerounaise, bilingue et passionnée par l’entrepreneuriat depuis toujours.
-          J’ai commencé à vendre très jeune, vers 17 ans, avec une idée claire : proposer des solutions réelles, belles et utiles. Daily Mistery a pris forme à mes 18 ans, mais l’envie de créer, elle, était déjà là.
+          J’ai commencé à vendre très jeune, vers 17 ans, avec une idée claire : proposer des solutions réelles, belles et utiles. Daily Mysteries a pris forme à mes 18 ans, mais l’envie de créer, elle, était déjà là.
           J’aime le soin de soi, l’esthétique, le partage de tips qui fonctionnent, et surtout aider les autres à se sentir mieux, plus confiants, plus alignés.
           Je suis quelqu’un qui aime tenter, dépasser les limites et transformer ce qu’on disait impossible en réalité.
-          Daily Mistery, c’est mon univers — que je partage avec vous.
+          Daily Mysteries, c’est mon univers — que je partage avec vous.
         </p>
 
         <Link
@@ -57,7 +57,7 @@ export default function HowWeHelp() {
             transition-all duration-300 hover:bg-[#d48080] hover:-translate-y-0.5
             shadow-[0_4px_20px_rgba(232,160,160,0.4)]"
         >
-          Me Contacter
+          Me Contacter Perssonnellement
         </Link>
       </div>
     </section>

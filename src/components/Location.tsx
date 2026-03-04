@@ -81,10 +81,6 @@ export default function Location() {
           Où sommes-nous situés ?
         </h2>
 
-        <p className="font-nunito text-[0.91rem] leading-[1.9] text-muted mb-4">
-          Nous sommes localisés au :
-        </p>
-
         <div
           className="bg-white rounded-2xl p-5 border-l-4 border-rose
             font-nunito text-[0.89rem] leading-[1.8] text-dark"
@@ -95,7 +91,7 @@ export default function Location() {
           <br />
           Douala
           <br />
-          <br />
+          +237688160351 <br />
           En{' '}
           <strong className="text-rose font-bold">présentiel ou en ligne</strong>
           ,<br />

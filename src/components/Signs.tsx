@@ -42,6 +42,13 @@ export default function Signs() {
   }, [])
   const img = require('../assets/images/bag.png')
 
+  const onClick = (text: string) => {
+
+            const a = document.createElement('a')
+            a.href = ``
+            a.target = '_blank'
+            a.click()
+  }
   return (
     <section className="bg-rose-bg px-[7%] py-20 text-center">
       <div
@@ -64,7 +71,8 @@ export default function Signs() {
           > 
           <FaTiktok className="w-20 h-16 text-rose" />
           </a>
-          <a href="https://chat.whatsapp.com/JK4Lwa8R7iAHcYB8pqhvT9?mode=ac_t" target="_blank" rel="noopener noreferrer"
+          
+          <a href={`https://wa.me//688160351?text=${encodeURIComponent(`Bonjour Daily Mysteries. Je souhaite vous contacter.`)}`} target="_blank" rel="noopener noreferrer"
             className="sign-card reveal flex items-center gap-3 bg-white rounded-2xl px-3 py-3
               shadow-[0_2px_18px_rgba(0,0,0,0.05)] transition-transform duration-300
               hover:-translate-y-1.5"

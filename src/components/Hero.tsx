@@ -38,16 +38,16 @@ export default function Hero() {
           Je me sentais incomprise. Limitée.
           Et pourtant, ce désir de beau, de soin de soi, d’expression ne me quittait pas.
           En cherchant, j’ai réalisé que je n’étais pas seule. Beaucoup de filles — et même des garçons — voulaient s’habiller autrement, créer leur univers, se sentir beaux et confiants, sans avoir de vraie solution ici.
-          Daily Mistery est né de là.
+          Daily Mysteries est né de là.
           Pas comme une simple boutique, mais comme un univers.
           Un espace où l’esthétique devient accessible, où chacun peut créer sa personnalité, son style, sa version du luxe — un luxe abordable, intentionnel, pensé pour ici.
-          Daily Mistery, c’est refuser de se contenter.
+          Daily Mysteries, c’est refuser de se contenter.
           C’est rendre le beau possible.
 
         </p>
         <div className="mt-6 flex flex-col gap-2">
           {[
-            'Livraison à domicile',
+            'Livraison et expedition partout',
             'Ouvert 24h/24',
           ].map((text) => (
             <span
