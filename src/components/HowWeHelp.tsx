@@ -58,7 +58,7 @@ export default function HowWeHelp() {
             transition-all duration-300 hover:bg-[#d48080] hover:-translate-y-0.5
             shadow-[0_4px_20px_rgba(232,160,160,0.4)]"
         >
-          Me Contacter Personnellement
+          Me Contacter directement
         </Link>
         <p className="gap-2 mt-4 flex items-center ">
           <FaEnvelope className="inline-block w-5 h-5 text-rose ml-2" />
