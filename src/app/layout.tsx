@@ -3,13 +3,6 @@ import type { Metadata } from 'next'
 import '../styles/globals.css'
 import { Poppins } from 'next/font/google'
 
-export const metadasta: Metadata = {
-  icons: '/favicon.ico',
-  title: 'Daily Mysteries - Ventes en ligne de produits de beauté naturels et vetements pour femmes et hommes',
-  description:
-    'Découvrez Daily Mysteries, votre boutique en ligne de produits de beauté naturels et de vêtements pour femmes et hommes. Explorez notre collection unique alliant style et bien-être, avec des produits soigneusement sélectionnés pour sublimer votre beauté naturelle. Profitez d’une expérience d’achat exceptionnelle et laissez-vous séduire par nos offres exclusives.',
-}
-
 export const metadata: Metadata = {
 	title: {
 		default: "Daily Mysteries - Ventes en ligne de produits de beauté naturels et vetements pour femmes et hommes",
