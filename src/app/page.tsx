@@ -13,9 +13,9 @@ export default function Home() {
       <Navbar />
       <Signs />
       <Hero />
+      <Location />
       <HowWeHelp />
       {/* <Services /> */}
-      <Location />
       <Footer />
     </main>
   )

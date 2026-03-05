@@ -3,6 +3,7 @@ import React from "react";
 import Link from 'next/link'
 import { useReveal } from '@/hooks/useReveal'
 import Image from "next/image";
+import { FaEnvelope } from "react-icons/fa";
 
 export default function HowWeHelp() {
   const imgRef = useReveal()
@@ -50,15 +51,23 @@ export default function HowWeHelp() {
         </p>
 
         <Link
-          href="https://wa.me//688160351"
+          href="https://www.instagram.com/daily_mysteries?igsh=YW5uMWJ2aXo0dW1k&utm_source=qr"
           target="_blank"
           className="inline-block bg-rose text-white px-8 py-3.5 rounded-full
             font-nunito font-bold text-[0.82rem] uppercase tracking-widest
             transition-all duration-300 hover:bg-[#d48080] hover:-translate-y-0.5
             shadow-[0_4px_20px_rgba(232,160,160,0.4)]"
         >
-          Me Contacter Perssonnellement
+          Me Contacter Personnellement
         </Link>
+        <p className="gap-2 mt-4 flex items-center ">
+          <FaEnvelope className="inline-block w-5 h-5 text-rose ml-2" />
+          <span className="ml-1 text-rose font-medium">
+            <a href="mailto:lydialontsi@gmail.com" className="hover:underline">
+              lydialontsi@gmail.com
+            </a>
+          </span>
+        </p>
       </div>
     </section>
   )

@@ -8,12 +8,6 @@ import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { FaBagShopping } from "react-icons/fa6";
 import Image from "next/image";
 
-const signs = [
-  { icon: '😢', text: "Instagram" },
-  { icon: '👶', text: 'Tiktok' },
-  { icon: '😓', text: 'WhatsApp' },
-]
-
 export default function Signs() {
   const cardsRef = useRef<HTMLDivElement>(null)
 
@@ -41,14 +35,6 @@ export default function Signs() {
     return () => observer.disconnect()
   }, [])
   const img = require('../assets/images/bag.png')
-
-  const onClick = (text: string) => {
-
-            const a = document.createElement('a')
-            a.href = ``
-            a.target = '_blank'
-            a.click()
-  }
   return (
     <section className="bg-rose-bg px-[7%] py-20 text-center">
       <div
