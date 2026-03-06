@@ -51,7 +51,7 @@ export default function HowWeHelp() {
         </p>
 
         <Link
-          href="https://www.instagram.com/daily_mysteries?igsh=YW5uMWJ2aXo0dW1k&utm_source=qr"
+          href="https://www.instagram.com/chloelydialontsi?igsh=MTA2M3Z0OXNzand2NQ%3D%3D&utm_source=qr"
           target="_blank"
           className="inline-block bg-rose text-white px-8 py-3.5 rounded-full
             font-nunito font-bold text-[0.82rem] uppercase tracking-widest

@@ -36,10 +36,10 @@ export default function Signs() {
   }, [])
   const img = require('../assets/images/bag.png')
   return (
-    <section className="bg-rose-bg px-[7%] py-20 text-center">
+    <section className="bg-rose-bg px-[7%] py-10 text-center">
       <div
         ref={cardsRef}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between lg:px-[20%] gap-12 mb-12"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between lg:px-[20%] gap-4 mb-12"
       >
         <div className="sign-card reveal flex items-center justify-between gap-4">
           <a href="https://www.instagram.com/daily_mysteries?igsh=YW5uMWJ2aXo0dW1k&utm_source=qr" target="_blank" rel="noopener noreferrer"
@@ -77,6 +77,9 @@ export default function Signs() {
                     className="relative z-10 w-full max-w-[420px] rounded-[20px] object-cover"
                   />
           <p className='font-extrabold text-lg italic text-[rgb(0,0,0,.5)]'>Chaque jour mérite sa dose de mystère</p>
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <p className='font-extrabold text-md  text-[rgb(0,0,0,.4)]'>Ref Pinterest  | luxe abordable | Pépites tendances | Précommandes| selfcare</p>
         </div>
       </div>
 
