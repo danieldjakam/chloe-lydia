@@ -79,7 +79,7 @@ export default function Signs() {
           <p className='font-extrabold text-lg italic text-[rgb(0,0,0,.5)]'>Chaque jour mérite sa dose de mystère</p>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <p className='font-extrabold text-md  text-[rgb(0,0,0,.4)]'>Ref Pinterest  | luxe abordable | Pépites tendances | Précommandes| selfcare</p>
+          <p className='font-extrabold text-sm  text-rose'>Ref Pinterest  | luxe abordable | Pépites tendances | Précommandes | selfcare</p>
         </div>
       </div>
 
