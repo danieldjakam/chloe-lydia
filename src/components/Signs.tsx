@@ -39,7 +39,7 @@ export default function Signs() {
     <section className="bg-rose-bg px-[7%] py-10 text-center">
       <div
         ref={cardsRef}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between lg:px-[20%] gap-4 mb-12"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between lg:px-[20%] gap-4 mb-4"
       >
         <div className="sign-card reveal flex items-center justify-between gap-4">
           <a href="https://www.instagram.com/daily_mysteries?igsh=YW5uMWJ2aXo0dW1k&utm_source=qr" target="_blank" rel="noopener noreferrer"
@@ -78,11 +78,11 @@ export default function Signs() {
                   />
           <p className='font-extrabold text-lg italic text-[rgb(0,0,0,.5)]'>Chaque jour mérite sa dose de mystère</p>
         </div>
+      </div>
+
         <div className="flex flex-col items-center justify-center">
           <p className='font-extrabold text-sm  text-rose'>Ref Pinterest  | luxe abordable | Pépites tendances | Précommandes | selfcare</p>
         </div>
-      </div>
-
       {/* <Link
         href="#location"
         className="inline-block border-2 border-rose text-rose px-8 py-3 rounded-full
